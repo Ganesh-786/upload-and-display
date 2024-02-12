@@ -1,16 +1,13 @@
-<!DOCTYPE html>
-<html>
-<!-- ::::::::::::::::::this folder has been uploaded in github::::::::::::::: -->
-<head>
-    <title>Upload Image</title>
-</head>
- <!-- ::::::::::::this is second change;;;;;;;;;;;;;? -->
-<body>
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>upload page</title>
+{% endblock title %}
+
+{% block body %}
     <h2>Upload Image</h2>
     <form action="/upload" method="post" enctype="multipart/form-data">
         <input type="file" name="file">
         <input type="submit" value="Upload">
     </form>
-</body>
-
-</html>
+{% endblock body %}
